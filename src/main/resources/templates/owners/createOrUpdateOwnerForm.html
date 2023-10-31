@@ -7,7 +7,7 @@
   <form th:object="${owner}" class="form-horizontal" id="add-owner-form" method="post">
     <div class="form-group has-feedback">
       <input
-        th:replace="~{fragments/inputField :: input ('First Name', 'firstName', 'text')}" />
+        th:replace="~{fragments/inputField :: input ('First Name', 'firstName', 'text')}" th:value="*{firstName}"/>
       <input
         th:replace="~{fragments/inputField :: input ('Last Name', 'lastName', 'text')}" />
       <input
